@@ -61,13 +61,13 @@ jobs:
           PRODUCT_VERSION: ${{ github.event.inputs.productVersion }}
           TARGET_ARCHES: ${{ github.event.inputs.targetArches }}
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: desktop-artifact arm64
           path: |
             ./out/*-arm64.dmg
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: desktop-artifact x64
           path: |
